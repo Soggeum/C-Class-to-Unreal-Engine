@@ -10,7 +10,8 @@ basic practice for Unreal Engine Implementation
 - 각 이동마다 50% 확률의 이벤트 발생
 - 10번의 이동이 완료된 후, 이동한 거리와 이벤트 발생횟수를 로그로 출력
   
-  <img width="363" height="297" alt="image" src="https://github.com/user-attachments/assets/1b5813a4-16fd-43fc-82da-2f65e7d3ae56" />
+<img width="363" height="297" alt="image" src="https://github.com/user-attachments/assets/3ce5f990-4875-40f6-a893-ec376cec192e" />
+
 
 # UHT
 
@@ -41,7 +42,7 @@ private:
 
 # 로그 결과
 
-<img width="914" height="420" alt="image" src="https://github.com/user-attachments/assets/a734f070-ae14-4642-acb7-b6d5e33f1962" />
+<img width="932" height="514" alt="image" src="https://github.com/user-attachments/assets/999f1431-d001-40b1-a464-c54a903d7c80" />
 
 # 추가 기능
 
@@ -49,13 +50,18 @@ private:
 
 1. Content Drawer에서 마우스 우클릭하여 새로운 블루프린트 만들기 클릭
 2. 부모클래스를 만들었던 `MyActor`로 설정
-<img width="935" height="692" alt="image" src="https://github.com/user-attachments/assets/8755087b-5270-4c87-be1b-002c8582483d" />
+<img width="463" height="355" alt="image" src="https://github.com/user-attachments/assets/0c41d81f-b5d0-4b4b-8ed8-372f1218bf72" />
+
 
 3. 멤버변수는 디테일 패널에서 확인 가능
-<img width="572" height="781" alt="image" src="https://github.com/user-attachments/assets/37804cb1-8ea3-45fc-809f-22c4fc442c65" />
+<img width="874" height="110" alt="image" src="https://github.com/user-attachments/assets/1a0682c6-808e-41cf-97b1-f2756ae41ed6" />
+<img width="561" height="407" alt="image" src="https://github.com/user-attachments/assets/01e5f78e-c076-4597-b9bd-d1cc76de2271" />
+
 
 4. 멤버함수는 EventGraph에서 우클릭하여 노드 추가시 확인 가능
-<img width="1195" height="309" alt="image" src="https://github.com/user-attachments/assets/8042a6f6-61d1-40b6-9e6f-133fc539f46d" />
+<img width="1402" height="342" alt="image" src="https://github.com/user-attachments/assets/eb13dcfa-be76-49ea-ba87-e0a24c74c837" />
+
+
 
 ## parent class와 블루프린트 순서
 
@@ -78,7 +84,8 @@ public:
 ```
 
 - 아래와 같이 `MyActor`클래스를 상속받은 블루프린트에서 `MeshComponent`를 확인할 수 있다
-<img width="396" height="195" alt="image" src="https://github.com/user-attachments/assets/7b39bfb8-c4b6-4e2f-8cda-d56a213a34d1" />
+<img width="388" height="383" alt="image" src="https://github.com/user-attachments/assets/08d40a05-fdd3-41e8-9d57-13c2b0ce2dcc" />
+
 
 ### Sphere Mesh 추가해보기
 
@@ -89,7 +96,8 @@ if (SphereMesh.Succeeded())
 	MeshComponent->SetStaticMesh(SphereMesh.Object);
 }
 ```
-<img width="600" height="151" alt="image" src="https://github.com/user-attachments/assets/d31bc052-0eb4-4dc4-b3ca-063583977f78" />
+<img width="1938" height="792" alt="image" src="https://github.com/user-attachments/assets/ffd31812-0ee9-4967-aca3-7b10510b0c42" />
+
 
 ## 동작 완료 후 sound 출력해보기
 
@@ -112,6 +120,7 @@ void AMyActor::PlaySuccessSound()
 }
 ```
 - SuccessSound를 UPROPERTY로 선언했기 때문에 에디터에서 음악을 설정해줄 수 있다
-  <img width="562" height="473" alt="image" src="https://github.com/user-attachments/assets/30bc7e88-4d93-4807-8263-0899798cf40a" />
+<img width="563" height="444" alt="image" src="https://github.com/user-attachments/assets/958b9ca6-ecd2-49b1-b029-adac72549dcf" />
+
 
 - `move()`가 끝나고 `PlaySuccessSound()`를 호출하여 음악이 들리게 하였다.
