@@ -40,6 +40,9 @@ public:
 	float distance(FVector2D first, FVector2D second);
 	int32 createEvent();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Custom")
+	int32 Custom_Input; 
+
 private:
 
 	FVector2D start;
