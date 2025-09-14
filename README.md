@@ -26,6 +26,7 @@ basic practice for Unreal Engine Implementation
 - 그러나 C++을 이용해 사용자가 정의한 타입들의 경우 엔진에서 알지 못하므로, 이런 사용자 정의 타입들을 엔진이 이해하고 처리할 수 있도록 하기 위한 작업이 리플렉션 시스템의 역할
 
 - 리플렉션 시스템은 UCLASS, UPROPERTY, UFUNCTION 등의 매크로 및 툴(UHT)을 통해 metadata를 생성해서 엔진 내부 모듈들이 해당 타입과 객체를 인지할 수 있게 함
+  
 ![](https://velog.velcdn.com/images/soggeum/post/d3ddd6b9-b75a-4266-9965-a5517a383b55/image.png)
 
 ## UHT 코드 생성기
